@@ -1,8 +1,5 @@
-I am not getting the labels in same line when i decrease the width of myblock to less than 70% 
-so i request you to help me with that.
-
-/*signup.html*/
 <!DOCTYPE html>
+<html>
 <head>
 	<title>SignUp</title>
     <link rel="stylesheet" type="text/css" href="signup.css">
@@ -20,47 +17,47 @@ so i request you to help me with that.
 		    <form method="post">
 		    	<!---------row of first name-----> 
 			    <div class="form-group row ">
-				    <label class="col-sm-2 col-form-label">First Name</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">First Name</label>
+				    <div class="col-sm-8">
 					    <input type="text" name="name" class="form-control" placeholder="Enter First Name...">	
 				    </div>
 			    </div>
 			    <!---------row of last name-----> 
 			    <div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Last Name</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">Last Name</label>
+				    <div class="col-sm-8">
 					    <input type="text" name="name" class="form-control" placeholder="Enter Last Name...">	
 				    </div>
 				</div>
 			    <!---------row of screen name-----> 
 			    <div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Screen Name</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">Screen Name</label>
+				    <div class="col-sm-8">
 					    <input type="text" name="name" class="form-control" placeholder="Enter Screen Name...">	
 				    </div>
 				</div>
 				<!---------row date of birth----->
 				<div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Date of birth</label>
-				    <div class="col-sm-4">
+				    <label class="col-sm-4 col-form-label">Date of birth</label>
+				    <div class="col-sm-3">
 				    	<!-------first column of date of birth(month)------->
 				        <select class="form-control">
-                            <option selected value='1'>Janaury</option>
-						    <option value='2'>February</option>
-						    <option value='3'>March</option>
-						    <option value='4'>April</option>
+                            <option selected value='1'>Jan</option>
+						    <option value='2'>Feb</option>
+						    <option value='3'>Mar</option>
+						    <option value='4'>Apr</option>
 						    <option value='5'>May</option>
-						    <option value='6'>June</option>
-						    <option value='7'>July</option>
-						    <option value='8'>August</option>
-						    <option value='9'>September</option>
-						    <option value='10'>October</option>
-						    <option value='11'>November</option>
-						    <option value='12'>December</option>
+						    <option value='6'>Jun</option>
+						    <option value='7'>Jul</option>
+						    <option value='8'>Aug</option>
+						    <option value='9'>Sept</option>
+						    <option value='10'>Oct</option>
+						    <option value='11'>Nov</option>
+						    <option value='12'>Dec</option>
 				        </select>
 				    </div>
 				    <!-------second column of date of birth(day)------->
-				    <div class="col-sm-3 ">
+				    <div class="col-sm-2">
 				        <select class="form-control">
 					        <option value="1">1</option>
 					        <option value="2">2</option>
@@ -217,17 +214,17 @@ so i request you to help me with that.
 			    </div>
 			    <!-------row of gender with radio buttons-----> 
 			    <div class="form-group row ">
-				    <label class="col-sm-2 form-check-label">Gender</label>
-				    <div class="col-sm-10">
-					    <input type="radio" name="Gender" value="Male">Male
-					    <input type="radio" name="Gender" value="Female">Female
-					    <input type="radio" name="Gender" value="Other">Other
+				    <label class="col-sm-4 form-check-label">Gender</label>
+				    <div class="col-sm-8">
+					    <input type="radio" value="Male">Male
+					    <input type="radio" class="Gender" value="Female">Female
+					    <input type="radio" class="Gender" value="Other">Other
 					</div>	
 				</div>
 				<!--------row of country with drop down list of country name-----> 
 				<div class="form-group row">
-				 	<label class="col-sm-2 col-form-label">Country</label>
-				    <div class="col-sm-10">
+				 	<label class="col-sm-4 col-form-label">Country</label>
+				    <div class="col-sm-8">
 				        <select class="form-control">
 							<option value="ISO 3166-2:AF">Afghanistan</option>
 							<option value="ISO 3166-2:AX">Åland Islands</option>
@@ -483,34 +480,34 @@ so i request you to help me with that.
 				</div>
 				<!----------row of email input type------->
 				<div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Email</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">Email</label>
+				    <div class="col-sm-8">
 					    <input type="email" name="email" class="form-control" placeholder="Enter E-mail...">	
 				    </div>
 				</div>
 				<!----------row of phone number format--------->
 				<div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Phone</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">Phone</label>
+				    <div class="col-sm-8">
 					    <input type="text" id="UserMobile" maxlength="14" data-fv-numeric="true" data-fv-numeric-message="Please enter valid phone numbers" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="Mobile No. " class="form-control" name="data[User][mobile]" data-fv-field="data[User][mobile]">	
 				    </div>
 				</div>
 				<!-------row of input type password------->
 				<div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Password</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">Password</label>
+				    <div class="col-sm-8">
 					    <input type="password" name="password" class="form-control">	
 				    </div>
 				</div>
 				<div class="form-group row">
-				    <label class="col-sm-2 col-form-label">Confirm Password</label>
-				    <div class="col-sm-10">
+				    <label class="col-sm-4 col-form-label">Confirm Password</label>
+				    <div class="col-sm-8">
 					    <input type="password" name="password" class="form-control">	
 				    </div>
 				</div>
 				<!--------check box input type row-------->
 				<div class="form-group row">
-
+				    
 				    <div class="col-sm-10">
 					    <input type="checkbox" name="checkbox" class="checkbox">
 					    <span class="myspan">I aggree to the Terms of Use</span>	
@@ -528,85 +525,3 @@ so i request you to help me with that.
 	</div>	
 </body>
 </html>
-
-
-/*signup.css */
-
-body{
-	background-color: lightgray !important;
-}
-.myblock{
-	border-radius: 14px;
-	width: 70%;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #222536;
-	margin-top: 15px;
-	margin-bottom: 30px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.topbar{
-	color: #C81770;
-	background-color: #2FC1E1;
-	height: 45px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	padding-top: 8px;
-	padding-left: 15px;
-	width: 100%;
-}
-.myform{
-	border-top-left-radius: 5px;
-	margin-left: 150px;
-	margin-right:50px;
-	padding-top:20px;
-	padding-bottom:0px;
-	color:#2FC1E1;
-	font-weight:bold;
-
-}
-label {
-  display: inline;
-  text-align: right; 
-  float: right;
-}
-h2{
-	color: #2FC1E1;
-}
-
-.checkbox{
-	margin-left: 123.5px;
-}
-.myspan{
-	margin-left: 5px;
-}
-.bottombar{
-	width:100%;
-	height:50px;
-	background-color:orange;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
-
-}
-.aa{
-	margin-right: 50px;
-}
-.submit{
-	background-color: #47B20E;
-	border-radius: 5px;
-
-}
-.cancel{
-	background-color: #C81770;
-    border-radius: 5px;
-    margin-right: 50px;
-    margin-top: 10px;
-
-}
-.form-control{
-	display: inline;
-}
-.Gender{
-	margin-left: 15px;
-}
